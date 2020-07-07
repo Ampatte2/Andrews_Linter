@@ -43,6 +43,7 @@
         "keyword-spacing":[
             "error"
         ],
+        "arrow-spacing":"error",
         "space-before-blocks":[
             "error"
         ],

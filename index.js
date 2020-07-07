@@ -22,3 +22,10 @@ console.log(catdog, helo, dogootron500);
 if (why === thisobj.foo) {
     console.log(why);
 }
+const helpme = () => {
+    return "apples";
+};
+console.log(helpme());
+function apples () {
+    
+}
