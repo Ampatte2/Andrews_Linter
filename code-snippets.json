@@ -1,0 +1,293 @@
+{	
+	"Import": {
+		"prefix": "imp",
+		"body": [
+		  "import { $2 } from '$1';"
+		],
+		"description": "Import"
+	  },
+	"Import React": {
+		"prefix": "react",
+		"body": [
+		  "import React from 'react';"
+		],
+		"description": "Import React"
+	  },
+	"Import React and Hooks": {
+		"prefix": "reacth",
+		"body": [
+			"import React, { $1 } from 'react';"
+		],
+		"description": "Import React, { Hooks }"
+	  },
+	"Import StyledComponents": {
+		"prefix": "style",
+		"body": [
+		  "import styled from 'styled-components';"
+		],
+		"description": "Import styled components"
+	  },
+	"Import CE ReactUI": {
+		"prefix": "cerui",
+		"body": [
+		  "import { $1 } from '@cheapreats/react-ui';"
+		],
+		"description": "Import CE React UI"
+	  },
+	"Import CE TS-SDK": {
+		"prefix": "tsce",
+		"body": [
+		  "import CE, $1 from '@cheapreats/ts-sdk';"
+		],
+		"description": "Import CE TS-SDK"
+	  },
+	"Import CE TS-SDK Controller": {
+		"prefix": "tscec",
+		"body": [
+			"import { $2 } from '@cheapreats/ts-sdk/dist/app/controllers/$1';"
+		],
+		"description": "import controller type"
+	},
+	"Export": {
+		"prefix": "exp",
+		"body": [
+		  "export $1 from '$2';"
+		],
+		"description": "Export"
+	},
+	"Export Const": {
+		"prefix": "expc",
+		"body": [
+		  "export const $1 = ($2) => {",
+		  "\t$3",
+		  "}"
+		],
+		"description": "Export"
+	},
+	"Typescript Function": {
+		"prefix": "tf",
+		"body": [
+		  "const $1 : $2 = ($3) => {",
+		  "\t$4",
+		  "}"
+		],
+		"description": "Export"
+	},
+	"TypeScript Component with Props": {
+		"prefix": "tsrfc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"interface I$1Props {",
+			"\t$2 : $3",
+			"}",
+			"",
+			"export const $1 : React.FC<I$1Props> = ({",
+			"\t",
+			"}): React.ReactElement => {",
+			"\t",
+			"\treturn (",
+			"\t\t",
+			"\t)",
+			"}"
+		],
+		"description": "React Function Component with Props Typescript"
+	},
+	"TypeScript useState": {
+		"prefix": "tsus",
+		"body": [
+			"const [$1, set$1] = useState<$2>($3)"
+		],
+		"description": "useState with type"
+	},
+	"JSX useEffect": {
+		"prefix": "ue",
+		"body": [
+			"useEffect(() => {",
+			"\t",
+			"\treturn $1",
+			"}, [$2]);"
+		],
+		"description": "useEffect"
+	},
+	"JSX useLayoutEffect": {
+		"prefix": "ule",
+		"body": [
+			"useLayoutEffect(() => {",
+			"\t",
+			"\treturn $1",
+			"}, [$2]);"
+		],
+		"description": "useLayoutEffect"
+	},
+	"JSX useCallback": {
+		"prefix": "ucb",
+		"body": [
+			"const $1 = useCallback(() => {",
+			"\t",
+			"\treturn $2",
+			"}, [$3]);"
+		],
+		"description": "useState with type"
+	},
+	"TypeScript useContext": {
+		"prefix": "tsucc",
+		"body": [
+			"const $1 = useContext<$3>($2);"
+		],
+		"description": "useContext with type"
+	},
+	"TypeScript interface": {
+		"prefix": "tsi",
+		"body": [
+			"interface I$1 {",
+			"\t$2 : $3",
+			"}"
+		],
+		"description": "interface"
+	},
+	"TypeScript enum": {
+		"prefix": "tse",
+		"body": [
+			"enum $1 {",
+			"\t$2 = '$3'",
+			"}"
+		],
+		"description": "enumerable"
+	},
+	"TypeScript useParams": {
+		"prefix": "tsup",
+		"body": [
+			"const {$1, } = useParams<I${2}>();"
+		],
+		"description": "useparams typescript"
+	},
+	"useHistory": {
+		"prefix": "uh",
+		"body": [
+			"const history = useHistory();"
+		],
+		"description": "history"
+	},
+	"StyledComponent": {
+		"prefix": "sc",
+		"body": [
+			"const $1 = styled.$2`",
+			"\t$3",
+			"`"
+		],
+		"description": "styled component"
+	},
+	"StyledComponent Props": {
+		"prefix": "tsscp",
+		"body": [
+			"interface I$1Props {",
+			"\t$2 : $3",
+			"}",
+			"const $1 = styled.$4`",
+			"\t$5",
+			"`"
+		],
+		"description": "styled component with props"
+	},
+	"Mixins": {
+		"prefix": "cemix",
+		"body": [
+			"Mixins.$1($2"
+		],
+		"description": "styled component"
+	},
+	"Array map": {
+		"prefix": "map",
+		"body": [
+			"$1.map(($2, index) => {",
+			"\t$3",
+			"}"
+		],
+		"description": "array map"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ($1) {",
+			"\t$2",
+			"}"
+		],
+		"description": "if"
+	},
+	"if else": {
+		"prefix": "ife",
+		"body": [
+			"if ($1) {",
+			"\t$2",
+			"} else {",
+			"\t$3",
+			"}"
+		],
+		"description": "if else"
+	},
+	"if else if else": {
+		"prefix": "ifei",
+		"body": [
+			"if ($1) {",
+			"\t$2",
+			"} else if ($3) {",
+			"\t$4",
+			"}",
+			"else {",
+			"\t$5",
+			"}"
+		],
+		"description": "if else"
+	},
+	"Object values": {
+		"prefix": "objval",
+		"body": [
+			"$Object.values($1).map(($2, index) => {",
+			"\t$3",
+			"}"
+		],
+		"description": "object values map"
+	},
+	"Object keys": {
+		"prefix": "objkey",
+		"body": [
+			"$Object.keys($1).map(($2, index) => {",
+			"\t$3",
+			"}"
+		],
+		"description": "object keys map"
+	},
+	"Object entries": {
+		"prefix": "objent",
+		"body": [
+			"$Object.entries($1).map(([$2, $3], index) => {",
+			"\t$4",
+			"}"
+		],
+		"description": "object values map"
+	},
+	"Switch": {
+		"prefix": "switch",
+		"body": [
+			"switch($1) {",
+			"\tcase $2: {",
+			"\t\t",
+			"\t\tbreak;",
+			"\t}",
+			"\tcase $3: {",
+			"\t\t",
+			"\t\tbreak;",
+			"\t}",
+			"\tcase $4: {",
+			"\t\t",
+			"\t\tbreak;",
+			"\t}",
+			"\tdefault: {",
+			"\t\t",
+			"\t\tbreak;",
+			"\t}"
+		],
+		"description": "switch case statement"
+	}
+}
