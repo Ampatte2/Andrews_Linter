@@ -48,6 +48,13 @@
 		],
 		"description": "import controller type"
 	},
+	"CE useMounted": {
+		"prefix": "useM",
+		"body": [
+			"const isMounted = Hooks.useMounted();"
+		],
+		"description": "CE useMounted Hook"
+	},
 	"Export": {
 		"prefix": "exp",
 		"body": [
@@ -63,6 +70,15 @@
 		  "}"
 		],
 		"description": "Export"
+	},
+	"Const": {
+		"prefix": "con",
+		"body": [
+		  "const $1 = ($2: $3) => {",
+		  "\t$4",
+		  "}"
+		],
+		"description": "Typescript Const"
 	},
 	"Typescript Function": {
 		"prefix": "tf",
@@ -162,6 +178,13 @@
 		],
 		"description": "useparams typescript"
 	},
+	"TypeScript useStateDispatch": {
+		"prefix": "tsd",
+		"body": [
+			"React.Dispatch<React.SetStateAction<boolean>>"
+		],
+		"description": "useState Dispatch"
+	},
 	"useHistory": {
 		"prefix": "uh",
 		"body": [
@@ -179,16 +202,25 @@
 		"description": "styled component"
 	},
 	"StyledComponent Props": {
-		"prefix": "tsscp",
+		"prefix": "tssc",
 		"body": [
 			"interface I$1Props {",
 			"\t$2 : $3",
 			"}",
-			"const $1 = styled.$4`",
+			"const $1 = styled.$4<I$1Props>`",
 			"\t$5",
 			"`"
 		],
 		"description": "styled component with props"
+	},
+	"JSDOC": {
+		"prefix": "jsd",
+		"body": [
+			"/**",
+			"*@param {$1} $2",
+			"**/"
+		],
+		"description": "JSDOC"
 	},
 	"Mixins": {
 		"prefix": "cemix",
